@@ -19,16 +19,13 @@ import org.simsek.json.JSONArray;
 import org.simsek.json.JSONException;
 import org.simsek.json.JSONObject;
 
-import lombok.extern.slf4j.Slf4j;
-
 /**
  * <strong>SIMSEK API</strong><br>
- * Tüm api'ler mevcut ve güncel.<br>
- * Herhangi bir aksilik durumunda <strong>Turkoglu-#0777</strong> ile iletiþim'e geçiniz.
+ * TÃ¼m api'ler mevcut ve gÃ¼ncel.<br>
+ * Herhangi bir aksilik durumunda <strong>Turkoglu-#0777</strong> ile iletiÅŸim'e geÃ§iniz.
  * @author by furkan
  *
  */
-@Slf4j
 public class API {
 
 	private static String VERSION = "1.0.0";
@@ -37,7 +34,7 @@ public class API {
 	public String web_url = "https://api.simsek.biz.tr/api?api=";
 	
 	/**
-	 * Simsek api ile baðlantý kurmanýzý saðlar.
+	 * Simsek api ile baÄŸlantÄ± kurmanÄ±zÄ± saÄŸlar.
 	 * @apiNote SimsekAPI api = new API(key).connect();
 	 * 
 	 * @version 1.0.0
@@ -50,16 +47,19 @@ public class API {
 
 	
 	/**
-	 * Simsek api verilerini çekmenizi saðlar.
+	 * Simsek api verilerini Ã§ekmenizi saÄŸlar.
 	 * @return
 	 */
 	public SimsekAPI connect() {
 		checkKey();
 		String version = getLatestVersion();
 		if(version != null && !version.equals(VERSION)) {
-			log.info("Yeni bir güncelleme bulundu lütfen " + VERSION + " sürümünü indirin.");
+			log.info("Yeni bir gÃ¼ncelleme bulundu lÃ¼tfen " + VERSION + " sÃ¼rÃ¼mÃ¼nÃ¼ indirin.");
 			log.info("https://github.com/SimsekGrup/simsekapi-java/releases/tag/" + VERSION);
+		}else {
+			log.info("GÃ¼ncelleme bulunamadÄ±.");
 		}
+		log.info("GÃ¼ncelleme bulunamadÄ±.");
 		return new SimsekAPI(this);
 	}
 	
@@ -74,12 +74,12 @@ public class API {
 					return true;
 				}
 			}else {
-				log.info("API Key kontrol edilirken hata oluþtu...");
+				log.info("API Key kontrol edilirken hata oluÅŸtu...");
 			}
 		} catch (IOException e) {
-			log.info("API ile iletiþim kurulamadý lütfen tekrar deneyiniz.");
+			log.info("API ile iletiÅŸim kurulamadÄ± lÃ¼tfen tekrar deneyiniz.");
 		} catch (JSONException e) {
-			log.info("API ile iletiþim kurulamadý lütfen tekrar deneyiniz.");
+			log.info("API ile iletiÅŸim kurulamadÄ± lÃ¼tfen tekrar deneyiniz.");
 		}
 		return false;
 	}
@@ -145,7 +145,17 @@ public class API {
     }
     
     
+	static class log {
+		private static void info(String str) {
+			System.out.println(str);
 
+		}
+		
+		private static void error(String str) {
+			System.out.println(str);
+
+		}
+	}
     
 	
 }

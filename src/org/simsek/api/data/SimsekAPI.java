@@ -25,7 +25,7 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * 8-Ball'a ait rastgele cevaplarý çekmenize yarar.
+	 * 8-Ball'a ait rastgele cevaplarÄ± Ã§ekmenize yarar.
 	 * @return 8ball
 	 * @throws JSONException 
 	 * @throws IOException 
@@ -36,7 +36,7 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * Rastgele Atatürk resimlerini çekmenize yarar.
+	 * Rastgele AtatÃ¼rk resimlerini Ã§ekmenize yarar.
 	 * @return ataturk
 	 * @throws JSONException
 	 * @throws IOException 
@@ -47,7 +47,7 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * Ünlü kiþilere ait rastgele sözleri çekmenize yarar.
+	 * ÃœnlÃ¼ kiÅŸilere ait rastgele sÃ¶zleri Ã§ekmenize yarar.
 	 * @return soz
 	 * @throws JSONException
 	 * @throws IOException 
@@ -58,18 +58,18 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * Rastgele esprileri çekmenize yarar.
+	 * Rastgele esprileri Ã§ekmenize yarar.
 	 * @return espri
 	 * @throws JSONException
 	 * @throws IOException 
 	 * 
 	 */
-	public JSONObject espiri() throws IOException, JSONException {
-		return api.readJsonFromUrl(this.api.web_url + "espri&key=" + this.api.key, APIType.Espiri);	
+	public JSONObject espri() throws IOException, JSONException {
+		return api.readJsonFromUrl(this.api.web_url + "espri&key=" + this.api.key, APIType.Espri);	
 	}
 	
 	/**
-	 * Rastgele olarak belirlenen aþk ölçer verilerini çekmenize yarar.
+	 * Rastgele olarak belirlenen aÅŸk Ã¶lÃ§er verilerini Ã§ekmenize yarar.
 	 * @return askSeviye, askSeviyeSonuc, askSeviyeDc
 	 * @throws JSONException
 	 * @throws IOException 
@@ -81,7 +81,7 @@ public class SimsekAPI {
 	
 	
 	/**
-	 * Yazmýþ olduðunuz yazýyý kekoca yazdýrmanýza yarar.
+	 * YazmÄ±ÅŸ olduÄŸunuz yazÄ±yÄ± kekoca yazdÄ±rmanÄ±za yarar.
 	 * @return yazi
 	 * @throws JSONException
 	 * @throws IOException
@@ -92,7 +92,7 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * Ýstenilen uzunlukta ve özellikte þifre oluþturmanýza yarar.
+	 * Ä°stenilen uzunlukta ve Ã¶zellikte ÅŸifre oluÅŸturmanÄ±za yarar.
 	 * @return sifre
 	 * @throws JSONException
 	 * @throws IOException 
@@ -103,7 +103,7 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * Ýstenilen uzunlukta ve özellikte þifre oluþturmanýza yarar.
+	 * Ä°stenilen uzunlukta ve Ã¶zellikte ÅŸifre oluÅŸturmanÄ±za yarar.
 	 * @return sifre
 	 * @throws JSONException
 	 * @throws IOException 
@@ -114,7 +114,7 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * Renk koduna ait bilgileri bulmanýza yarar.
+	 * Renk koduna ait bilgileri bulmanÄ±za yarar.
 	 * @return renkismi, kod, karesiz, rgb, hsl, hsv, cmyk, xyz
 	 * @throws JSONException
 	 * @throws IOException 
@@ -125,8 +125,8 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * Ýstenilen resme istenilen efekti vermenize yarar.
-	 * Þuanan aktif olarak çalýþan efektler: turkbayragi, azebayragi, triggered, wasted, erdoganselfie, kediselfie, kopekselfie, rainbow, tbc, karefekti, hapisefekti
+	 * Ä°stenilen resme istenilen efekti vermenize yarar.
+	 * Åžuanan aktif olarak Ã§alÄ±ÅŸan efektler: turkbayragi, azebayragi, triggered, wasted, erdoganselfie, kediselfie, kopekselfie, rainbow, tbc, karefekti, hapisefekti
 	 * @return Buffer (resim)
 	 * @throws IOException 
 	 * 
@@ -139,7 +139,7 @@ public class SimsekAPI {
 	
 	
 	/**
-	 * Ýstenilen RSS dosyasýný JSON formatýna çevirmenize yarar.
+	 * Ä°stenilen RSS dosyasÄ±nÄ± JSON formatÄ±na Ã§evirmenize yarar.
 	 * @return icerikler (ARRAY)
 	 * @throws JSONException
 	 * @throws IOException 
@@ -150,8 +150,8 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * Ýstediðiniz metni/yazýyý çevirmenize yarar.
-	 * Çevrilecek þeyin dilini otomatik algýlatmak için metindili kýsmýný "oto" yapmanýz gerekiyor.
+	 * Ä°stediÄŸiniz metni/yazÄ±yÄ± Ã§evirmenize yarar.
+	 * Ã‡evrilecek ÅŸeyin dilini otomatik algÄ±latmak iÃ§in metindili kÄ±smÄ±nÄ± "oto" yapmanÄ±z gerekiyor.
 	 * Desteklenen diller: af, sq, ar, hy, az, eu, be, bn, bs, bg, ca, ceb, ny, zh-cn, zh-tw, co, hr, cs, da, nl, en, eo, et, tl, fi, fr, fy, gl, ka, de, el, gu, ht, ha, haw, iw, hi, hmn, hu, is, ig, id, ga, it, ja, jw, kn, kk, km, ko, ky, lo, la, lv, lt, lb, mk, mg, ms, ml, mt, mi, mr, mn, my, ne, no, ps, fa, pl, pt, pa, ro, ru, sm, gd, sr, st, sn, sd, si, sk, sl, so, es, su, sw, sv, tg, ta, te, th, tr, uk, ur, uz, vi, cy, xh, yi, yo, zu
 	 * @return metinDiliKisa, metinDiliUzun, hedefDilKisa, hedefDilUzun, ceviri
 	 * @throws JSONException
@@ -163,7 +163,7 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * Ýstediðiniz ile ait namaz vakitlerini çekmenize yarar.
+	 * Ä°stediÄŸiniz ile ait namaz vakitlerini Ã§ekmenize yarar.
 	 * @return il, imsak, gunes, ogle, ikindi, aksam, yatsi, yaklasanVakit, yaklasanVakteKalan, ramazanAyi, ramazanVakit, ramazanKalan
 	 * @throws JSONException
 	 * @throws IOException 
@@ -174,7 +174,7 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * Ýstediðiniz ile ait hava durumunu çekmenize yarar.
+	 * Ä°stediÄŸiniz ile ait hava durumunu Ã§ekmenize yarar.
 	 * @return il, enlem, boylam, sicaklikDerece, sicaklikFahrenheit, enYuksekSicaklikDerece, enYuksekSicaklikFahrenheit, enDusukSicaklikDerece, enDusukSicaklikFahrenheit, havaOlayi, havaOlayiResmi, bulutOrani, nem, basinc, ruzgarYonu, ruzgarHizi, gunDogumu, gunBatimi
 	 * @throws JSONException
 	 * @throws IOException 
@@ -185,7 +185,7 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * Resimdeki renkleri bulmanýza yarar.
+	 * Resimdeki renkleri bulmanÄ±za yarar.
 	 * @return hex, rgb
 	 * @throws JSONException
 	 * @throws IOException 
@@ -196,8 +196,8 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * Ýstediðiniz ile ait nöbetçi eczaneleri bulmanýza yarar.
-	 * Türkiye sýnýrlarý içinde bulunan illeri ve Kýbrýs'ý (sadece ülke olarak) destekler.
+	 * Ä°stediÄŸiniz ile ait nÃ¶betÃ§i eczaneleri bulmanÄ±za yarar.
+	 * TÃ¼rkiye sÄ±nÄ±rlarÄ± iÃ§inde bulunan illeri ve KÄ±brÄ±s'Ä± (sadece Ã¼lke olarak) destekler.
 	 * @return isim, ilce, telefon, konum, adres (Array)
 	 * @throws JSONException
 	 * @throws IOException 
@@ -209,7 +209,7 @@ public class SimsekAPI {
 	
 	
 	/**
-	 * Ýstediðiniz þarkýya ait þarký sözü dahil bir çok bilgiyi çekmenize yarar.
+	 * Ä°stediÄŸiniz ÅŸarkÄ±ya ait ÅŸarkÄ± sÃ¶zÃ¼ dahil bir Ã§ok bilgiyi Ã§ekmenize yarar.
 	 * @return sarkici, sarkiIsmi, tamIsim, albumKapagi, url, soz
 	 * @throws JSONException
 	 * @throws IOException 
@@ -220,7 +220,7 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * Ýstenilen burç yorumlarýný çekmenize yarar.
+	 * Ä°stenilen burÃ§ yorumlarÄ±nÄ± Ã§ekmenize yarar.
 	 * @return burc, burcResmi, burcMottosu, burcGunu, burcunGezegeni, burcunElementi, burcunNiteligi, burcunUgurluSayilari, burcunUgurluGunu, burcunUgurluRengi, burcunOlumluOzellikleri, burcunOlumsuzOzellikeri, gunlukYorum, haftalikYorum, aylikYorum
 	 * @throws JSONException
 	 * @throws IOException 
@@ -231,7 +231,7 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * Vikipedi'den aradýðýnýz þeyin sonuçlarýný çekmenize yarar.
+	 * Vikipedi'den aradÄ±ÄŸÄ±nÄ±z ÅŸeyin sonuÃ§larÄ±nÄ± Ã§ekmenize yarar.
 	 * @return baslik, kisaAciklama, uzunAciklama, resim, url
 	 * @throws JSONException
 	 * @throws IOException 
@@ -243,7 +243,7 @@ public class SimsekAPI {
 	
 	
 	/**
-	 * TruckersMP sunucu istatistiklerini çekmenize yarar.
+	 * TruckersMP sunucu istatistiklerini Ã§ekmenize yarar.
 	 * @return baslik, kisaAciklama, uzunAciklama, resim, url (Array)
 	 * @throws JSONException
 	 * @throws IOException 
@@ -254,7 +254,7 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * Tarihte bugün olan olaylarý çekmenize yarar.
+	 * Tarihte bugÃ¼n olan olaylarÄ± Ã§ekmenize yarar.
 	 * @return baslik, kisaAciklama, uzunAciklama, resim, url
 	 * @throws JSONException
 	 * @throws IOException
@@ -265,7 +265,7 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * Ýstenilen kategorideki haberleri çekmenize yarar.<br>
+	 * Ä°stenilen kategorideki haberleri Ã§ekmenize yarar.<br>
 	 * <strong>Kategoriler:</strong> guncel, egitim, dunya, koronavirus, ekonomi, spor, bilim-teknoloji, politika, yasam, saglik
 	 * @return baslik, aciklama, url, yayinTarihi
 	 * @throws JSONException
@@ -277,10 +277,10 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * Instagram kullanýcýsýnýn bilgilerini çekmenize yarar.<br>
+	 * Instagram kullanÄ±cÄ±sÄ±nÄ±n bilgilerini Ã§ekmenize yarar.<br>
 	 * "islem" parametresine gonderi veya kullanici yazarak arama yapabilirsiniz.<br>
-	 * Gonderi deðeri için "url", kullanici deðeri için "kullanici" parametreleri girilmelidir. <br>
-	 * "duzenle" parametresini girmediðinizde Instagram'ýn saðladýðý bütün bilgilere eriþebilirsiniz, ancak sade bir çýktý almak istiyorsanýz bu parametreyi aktif etmeniz önerilir.
+	 * Gonderi deÄŸeri iÃ§in "url", kullanici deÄŸeri iÃ§in "kullanici" parametreleri girilmelidir. <br>
+	 * "duzenle" parametresini girmediÄŸinizde Instagram'Ä±n saÄŸladÄ±ÄŸÄ± bÃ¼tÃ¼n bilgilere eriÅŸebilirsiniz, ancak sade bir Ã§Ä±ktÄ± almak istiyorsanÄ±z bu parametreyi aktif etmeniz Ã¶nerilir.
 	 * @return *bad
 	 * @throws JSONException
 	 * @throws IOException 
@@ -291,7 +291,7 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * Sinemada vizyona giren/girecek filmlerin bilgilerini çekmenize yarar. "vizyon" parametresine 'suan' veya 'gelecek' yazarak sonuç alabilirsiniz.
+	 * Sinemada vizyona giren/girecek filmlerin bilgilerini Ã§ekmenize yarar. "vizyon" parametresine 'suan' veya 'gelecek' yazarak sonuÃ§ alabilirsiniz.
 	 * @return Array(filmIsmi, filmAfisiKucuk, filmAfisiBuyuk, filmTuru, filmSuresi, filmYonetmeni, filmSenaristi, filmVizyonTarihi, filmOyunculari, filmOzeti)
 	 * @throws JSONException
 	 * @throws IOException 
@@ -302,7 +302,7 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * TV'de bugün yayýnlanacak programlarý çekmenize yarar.
+	 * TV'de bugÃ¼n yayÄ±nlanacak programlarÄ± Ã§ekmenize yarar.
 	 * <strong>Desteklenen TV'ler:</strong> kanal-d, star-tv, fox, show-tv, atv, trt-1, tv8, cartoon-network, teve2, beyaz-tv, a2, fb-tv, disney-channel, tlc, kanal-7, dmax, trt-2, krt-tv, tele-1, cnn-turk, tv-100, bein-movies-turk, bein-sports-haber, disney-junior, 360, halk-tv, trt-cocuk, bein-movies-premiere, bein-movies-action, nick-jr, bein-sports-1, trt-spor, nickelodeon, bein-gurme, bein-movies-stars, bein-iz, bein-movies-family, bein-sports-2, bein-movies-action-2, eurosport-1, gs-tv, tjk-tv, trt-muzik, haberturk, bein-movies-premiere-2, best-fm, bein-sports-4, eurosport-2, a-spor, bein-series-sci-fi
 	 * @return tv, programlar: Array(program, programBaslama, programBitis)
 	 * @throws JSONException
@@ -314,8 +314,8 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * TV'de þu an yayýnlanan programlarý çekmenize yarar.<br>
-	 * Desteklenen TV'ler, TV'de bugün API'siyle aynýdýr.
+	 * TV'de ÅŸu an yayÄ±nlanan programlarÄ± Ã§ekmenize yarar.<br>
+	 * Desteklenen TV'ler, TV'de bugÃ¼n API'siyle aynÄ±dÄ±r.
 	 * @return Array(kanal, kod, suanIsim, suanBaslama, suanBitis, sonrakiIsim, sonrakiBaslama, sonrakiBitis)
 	 * @throws JSONException
 	 * @throws IOException 
@@ -326,8 +326,8 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * Döviz bilgilerini TL bazýnda anlýk olarak çekmenize yarar.<br>
-	 * <strong>Kullanýlabilir döviz kýsaltmalarý:</strong> GEL, TND, USD, EUR, GBP, CAD, DKK, SEK, CHF, NOK, JPY, AED, AUD, RUB, KWD, ZAR, BHD, LYD, SAR, IQD, ILS, IRR, INR, MXN, HUF, NZD, BRL, IDR, CSK, PLN, BGN, RON, CNY, ARS, ALL, AZN, BAM, BYR, CLP, COP, CRC, DZD, EGP, HKD, HRK, ISK, JOD, KRW, KZT, LBP, LKR, LTL, LVL, MAD, MDL, MKD, MYR, OMR, PEN, PHP, PKR, QAR, RSD, SGD, SYP, THB, TWD, UAH, UYU
+	 * DÃ¶viz bilgilerini TL bazÄ±nda anlÄ±k olarak Ã§ekmenize yarar.<br>
+	 * <strong>KullanÄ±labilir dÃ¶viz kÄ±saltmalarÄ±:</strong> GEL, TND, USD, EUR, GBP, CAD, DKK, SEK, CHF, NOK, JPY, AED, AUD, RUB, KWD, ZAR, BHD, LYD, SAR, IQD, ILS, IRR, INR, MXN, HUF, NZD, BRL, IDR, CSK, PLN, BGN, RON, CNY, ARS, ALL, AZN, BAM, BYR, CLP, COP, CRC, DZD, EGP, HKD, HRK, ISK, JOD, KRW, KZT, LBP, LKR, LTL, LVL, MAD, MDL, MKD, MYR, OMR, PEN, PHP, PKR, QAR, RSD, SGD, SYP, THB, TWD, UAH, UYU
 	 * @return kod, isim, alis, enDusuk, enYuksek, degisim, degisimYuzdesi, kapanis, guncellenmeTarihi
 	 * @throws JSONException
 	 * @throws IOException 
@@ -338,8 +338,8 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * Altýn bilgilerini TL bazýnda anlýk olarak çekmenize yarar.<br>
-	 * <strong>Kullanýlabilir altin birimleri:</strong> 14, 18, 22, ATA, BSL, C, CMR, GA, GAG, GR, HA, IKB, T, ONS, Y
+	 * AltÄ±n bilgilerini TL bazÄ±nda anlÄ±k olarak Ã§ekmenize yarar.<br>
+	 * <strong>KullanÄ±labilir altin birimleri:</strong> 14, 18, 22, ATA, BSL, C, CMR, GA, GAG, GR, HA, IKB, T, ONS, Y
 	 * @return kod, isim, alis, enDusuk, enYuksek, degisim, degisimYuzdesi, kapanis, guncellenmeTarihi
 	 * @throws JSONException
 	 * @throws IOException 
@@ -350,8 +350,8 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * Parite bilgilerini anlýk olarak çekmenize yarar. <br>
-	 * <strong>Kullanýlabilir altin birimleri:</strong> 14, 18, 22, ATA, BSL, C, CMR, GA, GAG, GR, HA, IKB, T, ONS, Y
+	 * Parite bilgilerini anlÄ±k olarak Ã§ekmenize yarar. <br>
+	 * <strong>KullanÄ±labilir altin birimleri:</strong> 14, 18, 22, ATA, BSL, C, CMR, GA, GAG, GR, HA, IKB, T, ONS, Y
 	 * @return kod, isim, alis, enDusuk, enYuksek, degisim, degisimYuzdesi, kapanis, guncellenmeTarihi
 	 * @throws JSONException
 	 * @throws IOException 
@@ -362,8 +362,8 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * Kripto para bilgilerini dolar ($) bazýnda anlýk olarak çekmenize yarar.<br>
-	 * <strong>Kullanýlabilir kripto paralar:</strong> BTC, ETH, XRP, BCH, LTC, USDT, EOS, ADA, XMR, VEN, TRX, POE, MANA, MTH, ELF, STRAT, XZC, WTC, ENJ, ZRX, ZEC, ZEN, ZIL, AE, ALGO, ARDR, ARK, BAT, REP, AOA, BNB, BSV, BCD, BTG, BTS, BTT, BTMX, BCN, BTM, XLINK, CRO, DAI, DCR, DENT, DGB, XMX, WAXP, ATOM, DOGE, EGT, ELA, NRG, GNT, GRIN, GXC, HOT, HT, KMD, KCS, LAMB, LEO, LSK, MAID, MKR, ETP, MONA, NANO, NAS, XEM, NEX, NEXO, NULS, OKB, ONT, PAX, NPXS, QTUM, QNT, QKC, RVN, REN, RR, SC, SOLVE, SNT, STEEM, XTZ, THETA, TUSD, USDC, VSYS, XVG, MCO, XAUT, NMR, CKB, DIVI, DX, CEL, STX, BUSD, HBAR, ETN, HUSD, GT, HYN, UBT, LUNA, MATIC, HIVE, FTT, KNC, UMA, CHZ, CETH, LRC, HAV, DOT, CELO, YFI, CHSB, AVAX, UNI, NXM, AMP, CRV, AAVE, CDAI, CAKE, 1INCH, RENBTC, NEAR, RSR, ALPHA, SOL, COMP, WBTC, KSM, FIL, BAL, EGLD, RUNE, CUSDC, SUSHI, GRT, OCEAN, ETHOS, FTM, AMPL, HBTC, MIOTA, WAVES, PPT, XLM, REQ, HSR, IOST, CND, VIBE, LUN, VIB, CMT, ICX, ETC, OMG, NEO, DSH
+	 * Kripto para bilgilerini dolar ($) bazÄ±nda anlÄ±k olarak Ã§ekmenize yarar.<br>
+	 * <strong>KullanÄ±labilir kripto paralar:</strong> BTC, ETH, XRP, BCH, LTC, USDT, EOS, ADA, XMR, VEN, TRX, POE, MANA, MTH, ELF, STRAT, XZC, WTC, ENJ, ZRX, ZEC, ZEN, ZIL, AE, ALGO, ARDR, ARK, BAT, REP, AOA, BNB, BSV, BCD, BTG, BTS, BTT, BTMX, BCN, BTM, XLINK, CRO, DAI, DCR, DENT, DGB, XMX, WAXP, ATOM, DOGE, EGT, ELA, NRG, GNT, GRIN, GXC, HOT, HT, KMD, KCS, LAMB, LEO, LSK, MAID, MKR, ETP, MONA, NANO, NAS, XEM, NEX, NEXO, NULS, OKB, ONT, PAX, NPXS, QTUM, QNT, QKC, RVN, REN, RR, SC, SOLVE, SNT, STEEM, XTZ, THETA, TUSD, USDC, VSYS, XVG, MCO, XAUT, NMR, CKB, DIVI, DX, CEL, STX, BUSD, HBAR, ETN, HUSD, GT, HYN, UBT, LUNA, MATIC, HIVE, FTT, KNC, UMA, CHZ, CETH, LRC, HAV, DOT, CELO, YFI, CHSB, AVAX, UNI, NXM, AMP, CRV, AAVE, CDAI, CAKE, 1INCH, RENBTC, NEAR, RSR, ALPHA, SOL, COMP, WBTC, KSM, FIL, BAL, EGLD, RUNE, CUSDC, SUSHI, GRT, OCEAN, ETHOS, FTM, AMPL, HBTC, MIOTA, WAVES, PPT, XLM, REQ, HSR, IOST, CND, VIBE, LUN, VIB, CMT, ICX, ETC, OMG, NEO, DSH
 	 * @return kod, isim, alis, enDusuk, enYuksek, degisim, degisimYuzdesi, kapanis, guncellenmeTarihi
 	 * @throws JSONException
 	 * @throws IOException 
@@ -374,8 +374,8 @@ public class SimsekAPI {
 	}
 	
 	/**
-	 * Kripto para bilgilerini dolar ($) bazýnda anlýk olarak çekmenize yarar.<br>
-	 * <strong>Kullanýlabilir kripto paralar:</strong> BTC, ETH, XRP, BCH, LTC, USDT, EOS, ADA, XMR, VEN, TRX, POE, MANA, MTH, ELF, STRAT, XZC, WTC, ENJ, ZRX, ZEC, ZEN, ZIL, AE, ALGO, ARDR, ARK, BAT, REP, AOA, BNB, BSV, BCD, BTG, BTS, BTT, BTMX, BCN, BTM, XLINK, CRO, DAI, DCR, DENT, DGB, XMX, WAXP, ATOM, DOGE, EGT, ELA, NRG, GNT, GRIN, GXC, HOT, HT, KMD, KCS, LAMB, LEO, LSK, MAID, MKR, ETP, MONA, NANO, NAS, XEM, NEX, NEXO, NULS, OKB, ONT, PAX, NPXS, QTUM, QNT, QKC, RVN, REN, RR, SC, SOLVE, SNT, STEEM, XTZ, THETA, TUSD, USDC, VSYS, XVG, MCO, XAUT, NMR, CKB, DIVI, DX, CEL, STX, BUSD, HBAR, ETN, HUSD, GT, HYN, UBT, LUNA, MATIC, HIVE, FTT, KNC, UMA, CHZ, CETH, LRC, HAV, DOT, CELO, YFI, CHSB, AVAX, UNI, NXM, AMP, CRV, AAVE, CDAI, CAKE, 1INCH, RENBTC, NEAR, RSR, ALPHA, SOL, COMP, WBTC, KSM, FIL, BAL, EGLD, RUNE, CUSDC, SUSHI, GRT, OCEAN, ETHOS, FTM, AMPL, HBTC, MIOTA, WAVES, PPT, XLM, REQ, HSR, IOST, CND, VIBE, LUN, VIB, CMT, ICX, ETC, OMG, NEO, DSH
+	 * Kripto para bilgilerini dolar ($) bazÄ±nda anlÄ±k olarak Ã§ekmenize yarar.<br>
+	 * <strong>KullanÄ±labilir kripto paralar:</strong> BTC, ETH, XRP, BCH, LTC, USDT, EOS, ADA, XMR, VEN, TRX, POE, MANA, MTH, ELF, STRAT, XZC, WTC, ENJ, ZRX, ZEC, ZEN, ZIL, AE, ALGO, ARDR, ARK, BAT, REP, AOA, BNB, BSV, BCD, BTG, BTS, BTT, BTMX, BCN, BTM, XLINK, CRO, DAI, DCR, DENT, DGB, XMX, WAXP, ATOM, DOGE, EGT, ELA, NRG, GNT, GRIN, GXC, HOT, HT, KMD, KCS, LAMB, LEO, LSK, MAID, MKR, ETP, MONA, NANO, NAS, XEM, NEX, NEXO, NULS, OKB, ONT, PAX, NPXS, QTUM, QNT, QKC, RVN, REN, RR, SC, SOLVE, SNT, STEEM, XTZ, THETA, TUSD, USDC, VSYS, XVG, MCO, XAUT, NMR, CKB, DIVI, DX, CEL, STX, BUSD, HBAR, ETN, HUSD, GT, HYN, UBT, LUNA, MATIC, HIVE, FTT, KNC, UMA, CHZ, CETH, LRC, HAV, DOT, CELO, YFI, CHSB, AVAX, UNI, NXM, AMP, CRV, AAVE, CDAI, CAKE, 1INCH, RENBTC, NEAR, RSR, ALPHA, SOL, COMP, WBTC, KSM, FIL, BAL, EGLD, RUNE, CUSDC, SUSHI, GRT, OCEAN, ETHOS, FTM, AMPL, HBTC, MIOTA, WAVES, PPT, XLM, REQ, HSR, IOST, CND, VIBE, LUN, VIB, CMT, ICX, ETC, OMG, NEO, DSH
 	 * @return kod, isim, alis, enDusuk, enYuksek, degisim, degisimYuzdesi, kapanis, guncellenmeTarihi
 	 * @throws JSONException
 	 * @throws IOException

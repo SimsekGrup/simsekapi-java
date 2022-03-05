@@ -26,7 +26,7 @@ JSONObject soz = api.soz();
 soz.getString("soz"); //Örnek Çıktı: Cahil kimsenin yanında kitap gibi sessiz ol.\n- Mevlânâ Celâleddîn-i Rûmî (Şair)
 
 //Rastgele espirileri çekmenize yarar.
-JSONObject espiri = api.espiri();
+JSONObject espri = api.espri();
 espiri.getString("espri"); //Örnek Çıktı: Röntgen Filmi çektirdik, yakında sinemalarda.
 
 //Rastgele olarak belirlenen aşk ölçer verilerini çekmenize yarar.

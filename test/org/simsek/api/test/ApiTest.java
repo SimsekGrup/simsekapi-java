@@ -23,7 +23,7 @@ public class ApiTest {
 		
 		
 		/**
-		 * API anahtar'ý almak için: https://api.simsek.biz.tr
+		 * API anahtar'Ä± almak iÃ§in: https://api.simsek.biz.tr
 		 */
 		SimsekAPI api = new API("API KEY").connect();
 
@@ -35,17 +35,17 @@ public class ApiTest {
 			 	JSONObject icerik = icerikler.getJSONObject(i);
 			 
 			 }
-			log.info("Nöbetçi Eczane örnek 'API' bilgisi çekme.");
+			log.info("NÃ¶betÃ§i Eczane Ã¶rnek 'API' bilgisi Ã§ekme.");
 			log.info("");
 			JSONArray ec = api.eczane("istanbul");
 			/*
-			 *  Tüm nöbetçi eczaneleri çekmek için foreach döngüsüne alýnýz. 
+			 *  TÃ¼m nÃ¶betÃ§i eczaneleri Ã§ekmek iÃ§in foreach dÃ¶ngÃ¼sÃ¼ne alÄ±nÄ±z. 
 			 *  
 			 *  
 			   for(int i = 0; i < ec.length(); i++) {
 			 		JSONObject nobetcieczane = ec.getJSONObject(i);
-			 		log.info("Ýlçe: " + nobetcieczane.getString("ilce"));
-			 		log.info("Ýsim: " + nobetcieczane.getString("isim"));
+			 		log.info("Ä°lÃ§e: " + nobetcieczane.getString("ilce"));
+			 		log.info("Ä°sim: " + nobetcieczane.getString("isim"));
 			 		log.info("Telefon: " + nobetcieczane.getString("telefon"));
 			 		log.info("Adres: " + nobetcieczane.getString("adres"));
 			 		log.info("Konum: " + nobetcieczane.getString("konum"));		
@@ -53,41 +53,41 @@ public class ApiTest {
 			 */
 
 			JSONObject nobetcieczane = ec.getJSONObject(0); 
-			log.info("Ýlçe: " + nobetcieczane.getString("ilce"));
-			log.info("Ýsim: " + nobetcieczane.getString("isim"));
+			log.info("Ä°lÃ§e: " + nobetcieczane.getString("ilce"));
+			log.info("Ä°sim: " + nobetcieczane.getString("isim"));
 			log.info("Telefon: " + nobetcieczane.getString("telefon"));
 			log.info("Adres: " + nobetcieczane.getString("adres"));
 			log.info("Konum: " + nobetcieczane.getString("konum"));
 			log.info("");
-			log.info("Kekoca Yazý Yazma");
-			String ea = api.keko("Þimþek Api mükemmeldir.").getString("yazi");
+			log.info("Kekoca YazÄ± Yazma");
+			String ea = api.keko("ÅžimÅŸek Api mÃ¼kemmeldir.").getString("yazi");
 			log.info("");
 			log.info(ea);
 			log.info("");
-			log.info("Rastgele Söz Apisi");
+			log.info("Rastgele SÃ¶z Apisi");
 			log.info("");
 			JSONObject soz = api.soz();
 			log.info(soz.getString("soz"));
 			log.info("");
-			log.info("Rastgele Espiri");
-			String as = api.espiri().getString("espri");
+			log.info("Rastgele Espri");
+			String as = api.espri().getString("espri");
 			log.info("");
 			log.info(as);
 			log.info("");
 		} catch (IOException e) {
-			log.error("Sunucuyla baðlantý kurulamadý veya beklenmedik bir hata. " + e.getLocalizedMessage());
+			log.error("Sunucuyla baÄŸlantÄ± kurulamadÄ± veya beklenmedik bir hata. " + e.getLocalizedMessage());
 		} catch (JSONException e) {
-			log.error("Web site ile ilgili bir sorun oluþtu. " + e.getLocalizedMessage());
+			log.error("Web site ile ilgili bir sorun oluÅŸtu. " + e.getLocalizedMessage());
 		}
 		System.exit(0);
 	}
 	
 	/*
-	 * Uygulamanýzda api request baþarýyla attýðý zaman belirtin.
+	 * UygulamanÄ±zda api request baÅŸarÄ±yla attÄ±ÄŸÄ± zaman belirtin.
 	 */
     @EventTarget(value = EventPriority.HIGHEST)
     public void on(RequestEvent event) {
-    	log.info(event.getApiType().getName() + " adlý request baþarýlý.");
+    	log.info(event.getApiType().getName() + " adlÄ± request baÅŸarÄ±lÄ±.");
     }
 	
     
